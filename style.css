@@ -1,0 +1,292 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	color: #e5e5e5;
+	background: #000;
+}
+
+h2.headline{
+	color: #fff;
+	font-family: Verdana, Geneva, sans-serif;
+	text-shadow: 0 0 5px #ff0000, 0 0 5px #fff;
+}
+
+h2.headline:hover{
+	-webkit-animation: bounceIn 1s;
+    -moz-animation: bounceIn 1s;
+    animation: bounceIn 1s;
+}
+
+h2#creds_headline{
+	color: #000;
+	font-family: Verdana, Geneva, sans-serif;
+	text-shadow: 0 0 5px #e5e5e5, 0 0 5px #fff;
+}
+
+
+.navbar-inverse{
+	opacity: 0.8;
+}
+
+.container{
+	padding-top: 60px;
+	padding-bottom: 100px;
+	background: #000;
+	background: url(../images/background.jpg) no-repeat center center fixed; /* Img src: http://www.desktopwallpaperhd.net/view/sunset-african-paper-background-wallpaper-art-desktop-gallery-121019.html */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+p.container-text{
+	background: #000;
+	opacity: 0.7;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+p::first-letter{
+	font-size: 1.20em;
+}
+
+
+#footer_container{
+	margin: auto;
+	width: 2000px;
+	color: #fff;
+	padding-top: 20px;
+	background: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-left: 20px;
+}
+
+/* Header. */
+#top_header{
+	height: 105px;
+	width: 1171px;
+	float: left;
+	background: url(../images/animals.png) no-repeat right;
+}
+
+
+.navbar-brand{
+	display: none;
+}
+
+img#logo-image:hover{
+	-webkit-animation: hinge 1s;
+    -moz-animation: hinge 1s;
+    animation: hinge 1s;
+	cursor: pointer;
+}
+
+li.menu-items{
+	background: #000;
+	margin-left: 5px;
+	border-radius: 10px;
+	margin-top: 2px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+li.menu-items:hover{
+	-webkit-animation: flash 2s;
+    -moz-animation: flash 2s;
+    animation: flash 2s;
+}
+
+
+
+@media screen and (max-width: 1212px) {
+	#top_header{
+		display: none;
+		}
+	
+	.navbar-brand{
+		display: block;
+	}
+		
+}
+
+/* Banner. */
+a.button{
+    overflow: hidden;
+    cursor: pointer;
+	text-transform: uppercase;
+}
+
+img.logo{
+	margin-top: 5px;
+}
+
+.header_menus{
+	float: left;
+	height: 120px;
+	width: 770px;
+}
+
+.logo{
+	float: left;
+}
+
+ul.menu{
+	float: right;
+}
+
+/* Card flipping effect. */
+.card-container{
+	perspective: 700;
+}
+
+.card{
+	color: #fff;
+	text-align: center;
+	background: #5677fc;
+	transition: all 0.6s ease;
+	transform-style: preserve-3d;
+}
+
+.front, .back{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	backface-visibility: hidden;
+}
+
+.back{
+	transform: rotateY(180deg);
+}
+
+h1{
+	margin: 0;
+}
+
+.card:hover{
+	transform: rotateY(180deg);
+}
+
+/* Writings. */
+.books{
+	margin-left: 10px;
+}
+
+.modal-books{
+	background: #000;
+}
+
+button.close{
+	color: #fff;
+}
+
+/* Testimonials. */
+.img-circle{
+	cursor: pointer;
+	-webkit-transition: -webkit-transform 1s 1s ease;
+	-moz-transition: -moz-transform 1s 1s ease;
+	transition: transform 1s 1s ease;
+}
+
+.img-circle:hover{
+	-webkit-transform: rotate(360deg) scale(1.25);
+	-moz-transform: rotate(360deg) scale(1.25);
+	-o-transform: rotate(360deg) scale(1.25);
+	transform: rotate(360deg) scale(1.25);
+}
+
+/* Creds */
+.creds_container{
+	background: url(../images/map.png) no-repeat center center; 
+}
+
+.credentials{
+	color: #330000;
+	float: left;
+	text-align: left;
+}
+
+.list-group-item{
+	background: url(../images/wooden.png) no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.list-group-item-heading{
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#johns_picture{
+	padding: none;
+}
+
+.johns_big_pic{
+	float: right;
+}
+
+#img-collage{
+	cursor: pointer;
+	-webkit-transition: -webkit-transform 0.5s 0.5s ease;
+	-moz-transition: -moz-transform 0.5s 0.5s ease;
+	transition: transform 0.5s 0.5s ease;
+}
+
+#img-collage:hover{
+	-webkit-transform: scale(1.25);
+	-moz-transform: scale(1.25);
+	-o-transform: scale(1.25);
+	transform: scale(1.25);
+}
+
+/* Make John's picture disappear after collapse. */
+@media screen and (max-width: 992px) {
+	#johns_picture{
+		display: none;
+	}
+		
+}
+
+.top-buffer { margin-top:80px; }
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.img-responsive{
+	width: 392px;
+	height: 292px;
+}
+
+span.angular-message{
+	color: blue;
+	background: gray;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+
+/* Footer. */
+.unstyled{
+	list-style: none;
+}
+
+.unstyled li{
+	text-align: left;
+}
